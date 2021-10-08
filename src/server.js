@@ -19,7 +19,7 @@ polka() // You can also use Express
 		json(),
 		sirv('static', {dev}),
 		session({
-			secret: 'conduit',
+			secret: 'bleh',
 			resave: false,
 			saveUninitialized: true,
 			cookie: {

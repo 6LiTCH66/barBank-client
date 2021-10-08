@@ -3,6 +3,7 @@
 	import { goto, stores} from '@sapper/app';
 	import { post } from 'utils.js'
 
+
 	const {page, session} = stores();
 	async function logout() {
 		await post(`auth/logout`);
