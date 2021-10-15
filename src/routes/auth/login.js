@@ -5,8 +5,6 @@ export async function post(req, res) {
        if(response.token) req.session.token = response.token;
        res.setHeader('Content-Type', 'application/json');
 
-
-
        res.end(JSON.stringify(response));
    })
 }
